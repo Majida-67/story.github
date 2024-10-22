@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); Instagram-like gradient */
+
+}
+.card{
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    width: 260px;
+    height: 510px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.stores{
+    padding: 7px;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 110px;
+    /* border-radius: 15px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom:2px solid white;
+
+}
+.stores::-webkit-scrollbar{
+    display: none;
+}
+
+/* Instagram-like gradient border */
+.story{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram-like gradient */
+    padding: 3px; /* Space for the white border around the image */
+    position: relative;
+    margin-right: 5px;
+}
+
+/* Inner image styling */
+.story img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white; /* White border around the image */
+}
+
+.full-screen{
+    height:100%;
+    width:100%;
+    display:none;
+    position:absolute;
+    /* background-color: red; */
+    border-radius:15px;
+}
